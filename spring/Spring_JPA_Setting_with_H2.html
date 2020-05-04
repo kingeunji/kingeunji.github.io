@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Spring boot JPA 설정 | 킹지의 코딩로그</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="VuePress로 제작한 기술블로그입니다!">
+    <link rel="preload" href="/assets/css/0.styles.ab1f0d48.css" as="style"><link rel="preload" href="/assets/js/app.a20d4a2b.js" as="script"><link rel="preload" href="/assets/js/2.326f605b.js" as="script"><link rel="preload" href="/assets/js/21.e35b3190.js" as="script"><link rel="prefetch" href="/assets/js/10.eb5025d0.js"><link rel="prefetch" href="/assets/js/11.10118e5a.js"><link rel="prefetch" href="/assets/js/12.4576798b.js"><link rel="prefetch" href="/assets/js/13.81ee1a81.js"><link rel="prefetch" href="/assets/js/14.c0ac8262.js"><link rel="prefetch" href="/assets/js/15.13e15709.js"><link rel="prefetch" href="/assets/js/16.00b6bd34.js"><link rel="prefetch" href="/assets/js/17.cf1f37fc.js"><link rel="prefetch" href="/assets/js/18.f531a212.js"><link rel="prefetch" href="/assets/js/19.e43c6b74.js"><link rel="prefetch" href="/assets/js/20.0e8eea36.js"><link rel="prefetch" href="/assets/js/22.118aa117.js"><link rel="prefetch" href="/assets/js/23.42c5180c.js"><link rel="prefetch" href="/assets/js/24.f8507621.js"><link rel="prefetch" href="/assets/js/3.350504d2.js"><link rel="prefetch" href="/assets/js/4.ce76527a.js"><link rel="prefetch" href="/assets/js/5.9409a98c.js"><link rel="prefetch" href="/assets/js/6.2f1f2d6e.js"><link rel="prefetch" href="/assets/js/7.3e50ef14.js"><link rel="prefetch" href="/assets/js/8.5da3b357.js"><link rel="prefetch" href="/assets/js/9.40550360.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ab1f0d48.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">킹지의 코딩로그</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">About</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/about/index.html" class="nav-link">
+  About me
+</a></li><li class="dropdown-item"><!----> <a href="/about/blog.html" class="nav-link">
+  About Blog
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">About</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/about/index.html" class="nav-link">
+  About me
+</a></li><li class="dropdown-item"><!----> <a href="/about/blog.html" class="nav-link">
+  About Blog
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/nodejs/" class="sidebar-heading clickable"><span>NodeJS</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/nuxt-guide/" class="sidebar-heading clickable"><span>Nuxt.js Guide</span> <span class="arrow right"></span></a> <!----></section></li><li><a href="/vue/" class="sidebar-link">VueJS</a></li><li><section class="sidebar-group collapsable depth-0"><a href="/javascript/" class="sidebar-heading clickable"><span>JavaScript</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/spring/" class="sidebar-heading clickable router-link-active open"><span>Spring</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/spring/Spring_JPA_Setting_with_H2.html" class="active sidebar-link">Spring boot JPA 설정</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/spring/Spring_JPA_Setting_with_H2.html#spring-boot-jpa-설정" class="sidebar-link">Spring boot JPA 설정</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="spring-boot-jpa-설정"><a href="#spring-boot-jpa-설정" class="header-anchor">#</a> Spring boot JPA 설정</h2> <blockquote><p>Spring Boot 버전 : 2.2.5</p></blockquote> <ol><li><p>H2 데이터베이스 설치 및 실행</p> <p>H2 공식 사이트(https://www.h2database.com/html/main.html) 에서 다운받는다.</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># 터미널 실행 
+
+cd /h2/bin
+chmod +x h2.sh
+./h2.sh
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div></li> <li><p>Spring boot 프로젝트에서 JPA와 DB 환경 설정</p> <p><code>application.yml</code> 파일 내 아래 코드 작성</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>spring:
+datasource:
+    url: jdbc:h2:tcp://localhost/~/jpashop
+    username: username
+    password: password
+    driver-class-name: org.h2.Driver
+
+jpa:
+    hibernate:
+    ddl-auto: create
+    properties:
+    hibernate:
+        format_sql: true
+
+logging:
+level:
+    org.hibernate.SQL: debug
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div></li> <li><p>테스트 코드 작성</p> <p>Member Entity 및 Repository 작성</p> <p><code>Member.java</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@Data
+@Getter @Setter
+public class Member {
+
+    @Id @GeneratedValue
+    private Long id;
+    private String username;
+
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p><code>MemberRepository.java</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@Repository
+public class MemberRepository {
+
+    @PersistenceContext
+    private EntityManager em;
+
+    public Long save(Member member) {
+        em.persist(member);
+        return member.getId();
+    }
+
+    public Member find(Long id) {
+        return em.find(Member.class, id);
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>Junit4로 테스트 코드 작성</p> <p><code>MemberRepositoryTest.java</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@RunWith(SpringRunner.class)
+@SpringBootTest
+public class MemberRepositoryTest {
+
+    @Autowired MemberRepository memberRepository;
+
+    @Test
+    @Transactional
+    public void testMember() throws Exception {
+
+        //given
+        Member member = new Member();
+        member.setUsername(&quot;memberA&quot;);
+
+        //when
+        Long savedId = memberRepository.save(member);
+        Member findMember = memberRepository.find(savedId);
+
+        //then
+        Assertions.assertThat(findMember.getId()).isEqualTo(member.getId());
+
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><p>테스트 코드가 정상적으로 동작하면 성공이다!</p></li></ol></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/javascript/How_javascript_works.html" class="prev">
+        자바스크립트 동작 원리
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a20d4a2b.js" defer></script><script src="/assets/js/2.326f605b.js" defer></script><script src="/assets/js/21.e35b3190.js" defer></script>
+  </body>
+</html>

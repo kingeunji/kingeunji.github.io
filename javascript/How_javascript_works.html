@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>자바스크립트 동작 원리 | 킹지의 코딩로그</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="VuePress로 제작한 기술블로그입니다!">
+    <link rel="preload" href="/assets/css/0.styles.ab1f0d48.css" as="style"><link rel="preload" href="/assets/js/app.a20d4a2b.js" as="script"><link rel="preload" href="/assets/js/2.326f605b.js" as="script"><link rel="preload" href="/assets/js/10.eb5025d0.js" as="script"><link rel="prefetch" href="/assets/js/11.10118e5a.js"><link rel="prefetch" href="/assets/js/12.4576798b.js"><link rel="prefetch" href="/assets/js/13.81ee1a81.js"><link rel="prefetch" href="/assets/js/14.c0ac8262.js"><link rel="prefetch" href="/assets/js/15.13e15709.js"><link rel="prefetch" href="/assets/js/16.00b6bd34.js"><link rel="prefetch" href="/assets/js/17.cf1f37fc.js"><link rel="prefetch" href="/assets/js/18.f531a212.js"><link rel="prefetch" href="/assets/js/19.e43c6b74.js"><link rel="prefetch" href="/assets/js/20.0e8eea36.js"><link rel="prefetch" href="/assets/js/21.e35b3190.js"><link rel="prefetch" href="/assets/js/22.118aa117.js"><link rel="prefetch" href="/assets/js/23.42c5180c.js"><link rel="prefetch" href="/assets/js/24.f8507621.js"><link rel="prefetch" href="/assets/js/3.350504d2.js"><link rel="prefetch" href="/assets/js/4.ce76527a.js"><link rel="prefetch" href="/assets/js/5.9409a98c.js"><link rel="prefetch" href="/assets/js/6.2f1f2d6e.js"><link rel="prefetch" href="/assets/js/7.3e50ef14.js"><link rel="prefetch" href="/assets/js/8.5da3b357.js"><link rel="prefetch" href="/assets/js/9.40550360.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ab1f0d48.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">킹지의 코딩로그</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">About</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/about/index.html" class="nav-link">
+  About me
+</a></li><li class="dropdown-item"><!----> <a href="/about/blog.html" class="nav-link">
+  About Blog
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">About</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/about/index.html" class="nav-link">
+  About me
+</a></li><li class="dropdown-item"><!----> <a href="/about/blog.html" class="nav-link">
+  About Blog
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/nodejs/" class="sidebar-heading clickable"><span>NodeJS</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/nuxt-guide/" class="sidebar-heading clickable"><span>Nuxt.js Guide</span> <span class="arrow right"></span></a> <!----></section></li><li><a href="/vue/" class="sidebar-link">VueJS</a></li><li><section class="sidebar-group collapsable depth-0"><a href="/javascript/" class="sidebar-heading clickable router-link-active open"><span>JavaScript</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/javascript/Asynchronous.html" class="sidebar-link">자바스크립트 비동기</a></li><li><a href="/javascript/ES6_new_feature.html" class="sidebar-link">ES6 이후의 문법</a></li><li><a href="/javascript/How_javascript_works.html" class="active sidebar-link">자바스크립트 동작 원리</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/javascript/How_javascript_works.html#자바스크립트-동작-원리" class="sidebar-link">자바스크립트 동작 원리</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/spring/" class="sidebar-heading clickable"><span>Spring</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="자바스크립트-동작-원리"><a href="#자바스크립트-동작-원리" class="header-anchor">#</a> 자바스크립트 동작 원리</h2> <p>자바스크립트는 기본적으로 <b>싱글스레드</b> 기반이다.<br>
+웹 브라우져에서 돌아가는 동적인 기능을 구현하려고 만든 언어이기 때문에 콜백큐를 기반으로 한 <b>이벤트 루프</b> 기반 방식으로 돌아간다.</p> <h3 id="자바스크립트-엔진"><a href="#자바스크립트-엔진" class="header-anchor">#</a> 자바스크립트 엔진</h3> <p><strong>자바스크립트 엔진</strong>은 자바스크립트 코드를 마이크로프로세서가 이해할 수 있는 기계어로 변환해주는 역할을 한다.<br>
+Rhino, JavaScriptCore, SpiderMonkey,V8 등이 있다. 엔진들은 <strong>ECMAScript(스크립트 언어에 대한 표준)</strong> 표준을 따른다.</p> <p>자바스크립트 엔진의 대표적인 예는 Google V8 엔진이다. V8은 Chorme과 Node.js 에서 사용한다.</p> <p><img src="https://user-images.githubusercontent.com/44806627/76283335-af814300-62dd-11ea-989d-b689e7066403.jpg" alt="..."></p> <p>엔진의 주요 구성요소는</p> <ul><li><strong>Memory Heap</strong> : 메모리 할당이 일어나는 곳</li> <li><strong>Call Stack</strong> : 코드 실행에 따라 호출 스택이 쌓이는 곳</li></ul> <p>추가적으로 <code>Event Loop</code> 가 존재하여 Task Queue에 들어가는 task들을 관리한다.</p> <h3 id="호출-스택-call-stack"><a href="#호출-스택-call-stack" class="header-anchor">#</a> 호출 스택 Call Stack</h3> <p>자바스크립트는 단 <strong>하나의 호출 스택(Call Stack)</strong> 을 사용한다.<br>
+이러한 특징 때문에 자바스크립트의 함수가 실행되는 방식을 &quot;Run to Completion&quot; 라고 한다.<br>
+이는 하나의 함수가 실행되면 실행이 끝날 때까지 다른 어떤 task도 수행될 수 없다는 의미다.<br>
+요청이 들어올 때마다 해당 요청을 순차적으로 호출 스택에 담아 처리한다.</p> <p>메소드가 실행될 때, Call Stack에 새로운 프레임이 생기고 push 되고, 실행이 끝나면 pop 되는 원리다!</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function multiply(x, y) {
+    return x * y;
+}
+function printSquare(x) {
+    var s = multiply(x, x);
+    console.log(s);
+}
+printSquare(5);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p><img src="https://user-images.githubusercontent.com/44806627/76292965-8bc8f780-62f3-11ea-9876-b5c97180b5ad.png" alt=""></p> <p>콜 스택의 각 단계를 스택 프레임(Stack Frame) 이라고 한다.</p> <p>예외가 발생했을 때 콘솔 로그 상에서 나타나는 스택 트레이스(Stack Trace)가 오류가 발생하기까지의 스택 트레이스들로 구성된다.</p> <h3 id="task-queue-event-queue"><a href="#task-queue-event-queue" class="header-anchor">#</a> Task Queue (Event Queue)</h3> <p>자바스크립트의 런타임 환경에서는 처리해야 하는 Task들을 임시 저장하는 대기 큐가 존재한다.
+Call Stack이 비어졌을 때 대기열에 들어온 순서대로 수행한다.</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>setTimeOut(function() {
+    console.log(&quot;first&quot;);
+}, 0)
+console.log(&quot;second&quot;);
+
+&gt;&gt;&gt; 실행결과 second first
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>비동기로 호출되는 함수들은 Call Stack에 쌓이지 않고 Task Queue에 enqueue 된다.<br>
+또 자바스크립트에서는 이벤트에 의해 실행되는 함수들, Web API 영역에 정의되어 있는 함수들은 비동기로 실행된다.</p> <h3 id="런타임"><a href="#런타임" class="header-anchor">#</a> 런타임</h3> <p>브라우저 내장 API들은 자바스크립트 엔진에서 제공하지 않는다.</p> <p><img src="https://user-images.githubusercontent.com/44806627/76283387-cf186b80-62dd-11ea-889f-df5339b9b1d7.jpg" alt="..."></p> <p>위 그림처럼, DOM, Ajax, setTimeout 과 같이 브라우저에서 제공하는 API 들을 Web API 라고 한다.<br>
+그리고 아래에 이벤트 루프와 콜백 큐도 있다.</p> <blockquote><p>참고자료<br>
+http://www.programmersought.com/article/25721021448/
+https://joshua1988.github.io/web-development/translation/javascript/how-js-works-inside-engine/</p></blockquote></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/javascript/ES6_new_feature.html" class="prev">
+        ES6 이후의 문법
+      </a></span> <span class="next"><a href="/spring/Spring_JPA_Setting_with_H2.html">
+        Spring boot JPA 설정
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a20d4a2b.js" defer></script><script src="/assets/js/2.326f605b.js" defer></script><script src="/assets/js/10.eb5025d0.js" defer></script>
+  </body>
+</html>

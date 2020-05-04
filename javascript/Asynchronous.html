@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>자바스크립트 비동기 | 킹지의 코딩로그</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="VuePress로 제작한 기술블로그입니다!">
+    <link rel="preload" href="/assets/css/0.styles.ab1f0d48.css" as="style"><link rel="preload" href="/assets/js/app.a20d4a2b.js" as="script"><link rel="preload" href="/assets/js/2.326f605b.js" as="script"><link rel="preload" href="/assets/js/8.5da3b357.js" as="script"><link rel="prefetch" href="/assets/js/10.eb5025d0.js"><link rel="prefetch" href="/assets/js/11.10118e5a.js"><link rel="prefetch" href="/assets/js/12.4576798b.js"><link rel="prefetch" href="/assets/js/13.81ee1a81.js"><link rel="prefetch" href="/assets/js/14.c0ac8262.js"><link rel="prefetch" href="/assets/js/15.13e15709.js"><link rel="prefetch" href="/assets/js/16.00b6bd34.js"><link rel="prefetch" href="/assets/js/17.cf1f37fc.js"><link rel="prefetch" href="/assets/js/18.f531a212.js"><link rel="prefetch" href="/assets/js/19.e43c6b74.js"><link rel="prefetch" href="/assets/js/20.0e8eea36.js"><link rel="prefetch" href="/assets/js/21.e35b3190.js"><link rel="prefetch" href="/assets/js/22.118aa117.js"><link rel="prefetch" href="/assets/js/23.42c5180c.js"><link rel="prefetch" href="/assets/js/24.f8507621.js"><link rel="prefetch" href="/assets/js/3.350504d2.js"><link rel="prefetch" href="/assets/js/4.ce76527a.js"><link rel="prefetch" href="/assets/js/5.9409a98c.js"><link rel="prefetch" href="/assets/js/6.2f1f2d6e.js"><link rel="prefetch" href="/assets/js/7.3e50ef14.js"><link rel="prefetch" href="/assets/js/9.40550360.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ab1f0d48.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">킹지의 코딩로그</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">About</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/about/index.html" class="nav-link">
+  About me
+</a></li><li class="dropdown-item"><!----> <a href="/about/blog.html" class="nav-link">
+  About Blog
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">About</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/about/index.html" class="nav-link">
+  About me
+</a></li><li class="dropdown-item"><!----> <a href="/about/blog.html" class="nav-link">
+  About Blog
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/nodejs/" class="sidebar-heading clickable"><span>NodeJS</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/nuxt-guide/" class="sidebar-heading clickable"><span>Nuxt.js Guide</span> <span class="arrow right"></span></a> <!----></section></li><li><a href="/vue/" class="sidebar-link">VueJS</a></li><li><section class="sidebar-group collapsable depth-0"><a href="/javascript/" class="sidebar-heading clickable router-link-active open"><span>JavaScript</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/javascript/Asynchronous.html" class="active sidebar-link">자바스크립트 비동기</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/javascript/Asynchronous.html#자바스크립트-비동기" class="sidebar-link">자바스크립트 비동기</a></li></ul></li><li><a href="/javascript/ES6_new_feature.html" class="sidebar-link">ES6 이후의 문법</a></li><li><a href="/javascript/How_javascript_works.html" class="sidebar-link">자바스크립트 동작 원리</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/spring/" class="sidebar-heading clickable"><span>Spring</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="자바스크립트-비동기"><a href="#자바스크립트-비동기" class="header-anchor">#</a> 자바스크립트 비동기</h2> <h3 id="_1-동기와-비동기"><a href="#_1-동기와-비동기" class="header-anchor">#</a> 1. 동기와 비동기</h3> <p>동기적 처리(Synchronous) 란 코드가 순차적으로 실행되는 방식이다</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>console.log(1);
+console.log(2);
+console.log(3);
+
+&gt;&gt;&gt; 실행결과 : 1 2 3
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>비동기적 처리(Asynchronous)는 특정 코드의 연산이 끝날 때까지 실행을 멈추지 않고 다음 코드를 먼저 실행하는 방식이다</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>setTimeout(function(){
+    console.log(1)
+}, 0)
+console.log(2)
+
+&gt;&gt;&gt; 실행결과 : 2 1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>function getData() {
+    var data;
+    $.get('http://api.com/users', function(res) {
+        data = res.data
+    });
+    return data;
+}
+
+console.log(getData()) 
+
+&gt;&gt;&gt; 실행결과 : undefinded
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>위 코드와 같이 ajax로 데이터를 요청하고 받아올 때까지 기다려주지 않고 다음 코드를 먼저 실행하는 것이 비동기 처리이다.</p> <h3 id="_2-콜백-함수"><a href="#_2-콜백-함수" class="header-anchor">#</a> 2. 콜백 함수</h3> <p>비동기 처리를 순차적으로 동작을 처리하려면 어떻게 해야할까?<br>
+초기 자바스크립트는 <strong>콜백 함수</strong> 라는 방법을 사용했다.</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function getData(callbackFunc) {
+    $.get('http://api.com/users', function(res) {
+        callbackFunc(res)
+    });
+}
+
+getData(function(data) {
+    console.log(data);
+    // $.get()의 return 값이 data로 전달됨
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>위처럼 콜백함수를 사용하면 특정 로직이 끝났을 때 원하는 동작을 실행할 수 있다.
+비동기 함수가 return 하는 값이 있으면 콜백함수의 파라미터로 전달된다.</p> <h3 id="_3-콜백-지옥"><a href="#_3-콜백-지옥" class="header-anchor">#</a> 3. 콜백 지옥</h3> <p>콜백함수는 비동기적 작업이 많아 질수록 콜백이 깊어진다.<br>
+또한 콜백 내에서 if문 분기와 에러 핸들링을 어렵게한다.</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function asyncFunc1(callback) {
+    setTimeout(function() {
+        console.log(1);
+        callback()
+    }, 100)
+}
+
+function asyncFunc2(callback) {
+    setTimeout(function() {
+        console.log(2);
+        callback()
+    }, 100)
+}
+
+function asyncFunc3(callback) {
+    setTimeout(function() {
+        console.log(3);
+        callback()
+    }, 100)
+}
+
+function asyncFunc4(callback) {
+    setTimeout(function() {
+        console.log(4);
+        callback()
+    }, 100)
+}
+
+asyncFunc1(function(result) {
+    asyncFunc2(function(result) {
+        asyncFunc3(function(result) {
+            asyncFunc4()
+        })
+    })
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br></div></div><h3 id="_4-promise"><a href="#_4-promise" class="header-anchor">#</a> 4. Promise</h3> <p>콜백 지옥을 해결하기 위해 <code>Promise</code> 패턴이 나왔다<br>
+자바스크립트에서 Promise는 <strong>비동기적으로 실행하는 작업의 결과(성공/실패)를 나타내는 객체</strong>이다.<br>
+Promise는 주로 서버에서 받아온 데이터를 화면에 표시할 때 사용한다.</p> <p>기존 콜백 함수로 사용하던 구조에 프로미스를 적용해보자.</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function getData(callback) {
+    return new Promise(function(resolve, reject) {
+        $.get('http://api.com/users', function(res) {
+            resolve(res);
+        });
+    });
+}
+
+getData().then(function(data) {
+    console.log(data);
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p><code>new Promise</code>, <code>resolve</code>, <code>reject</code>, <code>then()</code> 등 처음보는 개념들이 나온다.<br>
+하나씩 알아가보자</p> <h4 id="promise-생성자"><a href="#promise-생성자" class="header-anchor">#</a> Promise 생성자</h4> <p>생성자 함수와 동일하게 new 로 Promise 객체를 만들 수 있다.<br>
+이 때 인자로는 Executor 가 들어가는 데 <code>Executor</code>는 <code>resolve</code>와 <code>reject</code> 라는 두 개의 함수를 매개변수로 받는 실행함수이다.<br>
+작업이 성공적으로 이행되었으면 <code>resolve</code> 함수를 호출하고, 오류가 발생한 경우 <code>reject</code> 함수를 호출한다.</p> <h4 id="promise-의-상태-state"><a href="#promise-의-상태-state" class="header-anchor">#</a> Promise 의 상태 (state)</h4> <p><code>new Promise()</code> 로 프로미스를 생성하고 종료될 때까지 3가지 상태를 갖는다.</p> <ul><li>Pending (대기) : 비동기 처리가 아직 완료되지 않은 상태</li> <li>Fulfilled (이행) : 비동기 처리가 완료되어 프로미스 결과 값을 반환해준 상태<br>
+이행 상퇴가 되면 <code>then()</code> 을 이용하여 처리 결과 값을 받을 수 있다.</li> <li>Rejected (실패) : 비동기 처리가 실패하거나 오류가 발생한 상태
+실패 상태가 되면 실패한 이유(실패 처리의 결과 값)를 <code>catch()</code>로 받을 수 있다.</li></ul> <p><img src="https://user-images.githubusercontent.com/44806627/76385430-f38b4b00-63a4-11ea-8664-717d094a43a4.png" alt="promises"></p> <h4 id="then-method"><a href="#then-method" class="header-anchor">#</a> then() Method</h4> <p>then 메소드는 promise 객체를 리턴하고, 두 개의 콜백 함수를 인수로 받는다.<br>
+사용 형태는 다음과 같다.</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>promise.then(successCallback, failureCallback)
+
+promise.then(function (value) {
+  //성공했을 때 실행
+}, function (reason) {
+  //실패했을 때 실행
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h4 id="promise-chaining"><a href="#promise-chaining" class="header-anchor">#</a> Promise Chaining</h4> <p>then() 메소드 호출 후 프로미스 객체를 반환할 수 있어 여러 개의 프로미스를 연결해서 사용할 수 있다.</p> <h4 id="promise의-문제점"><a href="#promise의-문제점" class="header-anchor">#</a> Promise의 문제점</h4> <ul><li>프로미스를 사용한 예외 처리시 <code>try/catch</code> 대신에 <code>catch()</code> 메소드를 사용하여 예외 처리를 해야한다.<br>
+동기 코드와 비동기 코드가 섞여 있을 때 예외 처리가 누락된다.</li></ul> <h3 id="_5-async-await"><a href="#_5-async-await" class="header-anchor">#</a> 5. async await</h3> <p>Promise 의 불편한 점을 해결하기 위해 ES7 부터 <code>async/await</code> 키워드가 추가되었다.<br>
+이 키워드를 사용하면 비동기 코드를 마치 동기 코드처럼 보이게 작성할 수 있다.</p> <h4 id="async-await-기본-문법"><a href="#async-await-기본-문법" class="header-anchor">#</a> async await 기본 문법</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>async function 함수명() {
+  await 비동기_처리_메서드_명();
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>여기서 주의할 점은 비동기 메소드가 프로미스 객체를 반환해야 await가 의도한 대로 동작한다.</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// Promise로 작성한 코드 
+function fetchAuthorName(postId) {
+    return fetch('/posts/${postId}')
+        .then(response =&gt; response.json())
+        .then(post =&gt; post.userId)
+        .then(userId =&gt; {
+            return fetch('/users/${userId}')
+                    .then(response =&gt; response.json())
+                    .then(user =&gt; user.name); 
+        });
+}
+
+// async await 키워드를 사용한 코드
+async function asyncFetchAuthorName(postId) {
+    const postResponse = await fetch('/posts/${postId}');
+    const post = await postResponse.json();
+    const userId = post.userId;
+    const userResponse = await fetch('users/${userId}');
+    const user = await userResponse.json();
+    return user.name;
+}
+
+fetchAuthorName(1).then(name =&gt; console.log(&quot;name : &quot;, name));
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><p>두 코드의 다른 점은 function 앞에 <code>async</code>라는 예약어를 붙이고, Promise 객체를 리턴하는 비동기 처리를 하는 함수 앞에 <code>await</code>를 붙인다.</p> <h4 id="async-await-예외-처리"><a href="#async-await-예외-처리" class="header-anchor">#</a> async &amp; await 예외 처리</h4> <p>동기/비동기 구분없이 <code>try/catch</code>로 일관되게 예외 처리를 할 수 있는 부분도 큰 이점이다.</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>async function asyncFetchAuthorName(postId) {
+    const postResponse = await fetch('/posts/${postId}');
+    const post = await postResponse.json();
+    const userId = post.userId;
+    try {
+        const userResponse = await fetch('users/${userId}');
+        const user = await userResponse.json();
+        return user.name;
+    } catch(err) {
+        console.log('Faile to fetch User : ', err);
+        return &quot;Unknown&quot;;
+    }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vue/" class="prev">
+        VueJS
+      </a></span> <span class="next"><a href="/javascript/ES6_new_feature.html">
+        ES6 이후의 문법
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a20d4a2b.js" defer></script><script src="/assets/js/2.326f605b.js" defer></script><script src="/assets/js/8.5da3b357.js" defer></script>
+  </body>
+</html>
