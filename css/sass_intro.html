@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SASS란? | 킹지의 코딩로그</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="VuePress로 제작한 기술블로그입니다!">
+    <link rel="preload" href="/assets/css/0.styles.ab1f0d48.css" as="style"><link rel="preload" href="/assets/js/app.da307c2a.js" as="script"><link rel="preload" href="/assets/js/2.326f605b.js" as="script"><link rel="preload" href="/assets/js/9.8a7fe81e.js" as="script"><link rel="prefetch" href="/assets/js/10.9993c4e7.js"><link rel="prefetch" href="/assets/js/11.561b92e1.js"><link rel="prefetch" href="/assets/js/12.99a5cee3.js"><link rel="prefetch" href="/assets/js/13.abff5add.js"><link rel="prefetch" href="/assets/js/14.fa9d2bbe.js"><link rel="prefetch" href="/assets/js/15.7201d60b.js"><link rel="prefetch" href="/assets/js/16.8c511cf2.js"><link rel="prefetch" href="/assets/js/17.fdcf8675.js"><link rel="prefetch" href="/assets/js/18.a1385ed1.js"><link rel="prefetch" href="/assets/js/19.cf0f3ab6.js"><link rel="prefetch" href="/assets/js/20.e8950916.js"><link rel="prefetch" href="/assets/js/21.8f1e74a3.js"><link rel="prefetch" href="/assets/js/22.82ba0b1a.js"><link rel="prefetch" href="/assets/js/23.53b3248d.js"><link rel="prefetch" href="/assets/js/24.a17212b5.js"><link rel="prefetch" href="/assets/js/25.ef9e1360.js"><link rel="prefetch" href="/assets/js/26.650df0a0.js"><link rel="prefetch" href="/assets/js/3.ad5b36ac.js"><link rel="prefetch" href="/assets/js/4.ce76527a.js"><link rel="prefetch" href="/assets/js/5.0016b806.js"><link rel="prefetch" href="/assets/js/6.9b8d1193.js"><link rel="prefetch" href="/assets/js/7.78a85deb.js"><link rel="prefetch" href="/assets/js/8.cb2573cf.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ab1f0d48.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">킹지의 코딩로그</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">About</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/about/index.html" class="nav-link">
+  About me
+</a></li><li class="dropdown-item"><!----> <a href="/about/blog.html" class="nav-link">
+  About Blog
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">About</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/about/index.html" class="nav-link">
+  About me
+</a></li><li class="dropdown-item"><!----> <a href="/about/blog.html" class="nav-link">
+  About Blog
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/nodejs/" class="sidebar-heading clickable"><span>NodeJS</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/nuxt-guide/" class="sidebar-heading clickable"><span>Nuxt.js Guide</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/css/" class="sidebar-heading clickable router-link-active open"><span>CSS</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/css/sass_intro.html" class="active sidebar-link">SASS란?</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/javascript/" class="sidebar-heading clickable"><span>JavaScript</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/spring/" class="sidebar-heading clickable"><span>Spring</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="sass란"><a href="#sass란" class="header-anchor">#</a> SASS란?</h1> <p><code>Sass(Syntactically Awesome Style Sheets)</code> 는 CSS pre-processor 로서, 복잡한 작업을 쉽게 할 수 있게 해주고, 코드의 재활용성을 높여줄 뿐 만 아니라, 코드의 가독성을 높여주어 유지보수를 쉽게 해준다.</p> <h3 id="_1-변수기능-도입"><a href="#_1-변수기능-도입" class="header-anchor">#</a> 1. 변수기능 도입</h3> <p>Sass는 CSS에 변수 기능을 도입해준다.</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>$primary-color: #333;
+
+body {
+  background-color: $primary-color;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="_2-수학-연산자-사용가능"><a href="#_2-수학-연산자-사용가능" class="header-anchor">#</a> 2. 수학 연산자 사용가능</h3> <p>기존 CSS에서 <code>calc()</code> 함수를 사용했던 연산이 가능해졌다!<br>
+단, 단위를 통일해서 사용해줘야 함!</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>.container { width: 100%; }
+
+
+article[role=&quot;main&quot;] {
+  float: left;
+  width: 600px / 960px * 100%;
+}
+
+aside[role=&quot;complementary&quot;] {
+  float: right;
+  width: 300px / 960px * 100%;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="_3-중첩-기능"><a href="#_3-중첩-기능" class="header-anchor">#</a> 3. 중첩 기능</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>.container {
+   width: 100%;
+}
+
+.container h1 {
+  color: red;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>기존 CSS 에선 특정 선택자 안에 선택자를 스타일링 하려면 위 코드처럼 써줘야된다.<br>
+프로젝트가 커지면 유지보수가 어렵다는 단점이 있다.</p> <p>반면 Sass에서는 부모 선택자를 리퍼런스 할떄는 &amp; 문자를 사용하면서 간단하게 작성할 수 있다.</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>/* Sass */
+.container {
+    width: 100%;
+    h1 {
+        color: red;
+        &amp;:hover {
+          color: yellow;
+        }
+    }
+
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>단, Sass 코드 중첩을 할 때, 4 레벨 보다 깊게 들어가지 말 것</p> <h3 id="_5-import"><a href="#_5-import" class="header-anchor">#</a> 5. import</h3> <p>import 기능은 스타일들을 여러 파일들로 나누고, 다른 파일에서 불러와서 사용하는 기능이다.</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@import &quot;layout&quot;;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="_6-상속"><a href="#_6-상속" class="header-anchor">#</a> 6. 상속</h3> <p>Sass 에서 특정 선택자를 상속 할 때, <code>@extend</code> directive를 사용한다.</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>.box {
+  border: 1px solid gray;
+  padding: 10px;
+  display: inline-block;
+}
+
+.success-box {
+  @extend .box;
+  border: 1px solid green;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h3 id="_7-mixin-믹스인"><a href="#_7-mixin-믹스인" class="header-anchor">#</a> 7. Mixin (믹스인)</h3> <p>Mixin는 extend 와 비슷하지만 argument (인수) 를 받을 수 있다.<br>
+mixin 을 선언 할 떄는 <code>@mixin</code> directive 를 사용하며, 이를 사용 할 때는 @include directive 를 사용한다.</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@mixin headline ($color, $size) {
+  color: $color;
+  font-size: $size;
+}
+
+h1 {
+  @include headline(green, 12px);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/nuxt-guide/nuxtjs_firebase_login.html" class="prev">
+        NuxtJS + Firebase 회원가입 / 로그인
+      </a></span> <span class="next"><a href="/javascript/Asynchronous.html">
+        자바스크립트 비동기
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.da307c2a.js" defer></script><script src="/assets/js/2.326f605b.js" defer></script><script src="/assets/js/9.8a7fe81e.js" defer></script>
+  </body>
+</html>
